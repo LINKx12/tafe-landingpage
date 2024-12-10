@@ -1,0 +1,936 @@
+/*Basic Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------- Font ----------------*/
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype'); /*------- Font used from https://fonts.google.com/specimen/Press+Start+2P ------- */
+}
+
+/*---------------- Body ----------------*/
+body {
+    line-height: 1.6;
+    background: url(../images/starbackground.jpg) repeat; /*------- © 2024 Jay Brown AI Generated using https://ideogram.ai/ jay.brown@outlook.com.au ------- */
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', sans-serif;
+    text-shadow: 0 0 2px #ff00ff, 0 0 3px #ff00ff, 0 0 3px #ff00ff, 0 0 5px #ff00ff, 0 0 20px #ff00ff;
+}
+
+p, h3, blockquote, .testimonial-name{
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+/*---------------- Header ----------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid #b602bd;
+    padding-left: 50px;
+}
+
+/*---------------- Nav ----------------*/
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 10px 20px;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #b602bd;
+    background-color: #000;
+    padding: 5px 10px;
+    border: 2px solid #4b004b;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #4b004b;
+    box-shadow: inset 1px 1px #000, inset -1px -1px #700b7a;
+    color: #d600ff;
+}
+
+
+/*---------------- Index Page ----------------*/
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: start;
+    width: 100vw;
+    height: 800px;
+    background: url('../images/shopfrontdesktop.jpg') no-repeat center center/cover; /*------- © 2024 Jay Brown AI Generated using https://ideogram.ai/ jay.brown@outlook.com.au ------- */
+    border-bottom: 2px solid #b602bd;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10rem 5rem;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.hero .highlight {
+    color: #b602bd;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.button-filled {
+    background-color: #0400f8;
+    color: #ffffff;
+    border: 2px solid #b602bd;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+    letter-spacing: 1px;
+}
+
+.button-filled:hover {
+    background-color: #b602bd;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(182, 2, 189, 0.8);
+}
+
+.testimonials {
+    padding: 5rem;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.testimonials h1 {
+    font-size: 3rem;
+    color: #b602bd;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.testimonial-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.testimonial {
+    text-align: left;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+@keyframes horizontal-flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.testimonial .stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+.testimonial .stars img {
+    animation: horizontal-flip 2s linear infinite;
+}
+
+blockquote {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.testimonial-image {
+    border: 2px solid #b602bd;
+    box-shadow: 0 0 50px rgba(182, 2, 189, 0.7);
+}
+
+.testimonial-name {
+    color: #ffffff;
+}
+
+.newsletter {
+    padding: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.newsletter header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.left-gif {
+    margin-right: 20px;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    color: #b602bd;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter button {
+    background-color: #0400f8;
+    color: #ffffff;
+    border: 2px solid #b602bd;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+}
+
+.newsletter button:hover {
+    background-color: #b602bd;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(182, 2, 189, 0.8);
+}
+
+/*---------------- Contact Page ----------------*/
+.contactus-page .hero {
+    background: url('../images/contactusdesktop.jpg') no-repeat center center/cover; /*------- © 2024 Jay Brown Photography jay.brown@outlook.com.au ------- */
+    height: 700px;
+}
+
+main.contact-page {
+    display: grid;
+    grid-template-columns: 0.9fr 400px;
+    grid-template-rows: auto auto;
+    gap: 4rem;
+    padding: 10rem;
+    margin: -4rem 0;
+}
+
+.contact-page-hero {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    padding: 0;
+}
+
+.contactus-page .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.contact-page-hero .highlight {
+    color: #b602bd;
+}
+
+.contact-page-hero p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #ffffff;
+}
+
+.contact-info {
+    grid-column: 1;
+    border: 2px solid #b602bd;
+    box-shadow: 0 0 50px rgba(182, 2, 189, 0.7);
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #181818;
+    margin-top: 2rem;
+}
+
+.contact-info h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    color: #ffffff;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.contact-info input[type="text"], .contact-info input[type="email"], .contact-info textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #b602bd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+button.send-message {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    background-color: #0400f8;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', sans-serif;
+    border: 2px solid #b602bd;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button.send-message:hover {
+    background-color: #b602bd;
+    box-shadow: 0 0 15px rgba(182, 2, 189, 0.8);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 900px 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 900px;
+}
+
+/*---------------- Games Page ----------------*/
+.games-page .hero {
+    background: url('../images/gamesdesktop.jpg') no-repeat center center/cover; /*------- © 2024 Jay Brown Photography jay.brown@outlook.com.au ------- */
+    height: 700px;
+    color: #ffffff;
+}
+
+.games-page {
+    color: #ffffff;
+}
+
+.games-page .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.games-page .games-intro {
+    padding: 2rem 7rem;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.games-page .games-intro h1 {
+    font-size: 2.5rem;
+    color: #b602bd;
+    text-shadow: 2px 2px 5px #ff00ff, -2px -2px 5px #ff00ff;
+}
+
+.games-page .games-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.games-page .games-grid .game {
+    text-align: center;
+    border: 3px solid #b602bd;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.games-page .add-to-cart-button {
+    background-color: #0400f8;
+    color: white;
+    border: 2px solid #b602bd;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0px;
+    text-transform: uppercase; 
+    font-family: 'Press Start 2P';
+    letter-spacing: 1px;
+}
+
+.games-page .add-to-cart-button:hover {
+    background-color: #b602bd;
+    color: #f8f8f8;
+    box-shadow: 0 0 15px rgba(182, 2, 189, 0.8);
+}
+
+/*---------------- Showcase Page ----------------*/
+.showcase-page .hero {
+    background: url('../images/showcasedesktop.jpg') no-repeat center center/cover; /*------- © 2024 Jay Brown Photography jay.brown@outlook.com.au ------- */
+    height: 700px;
+}
+
+.showcase-page .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.showcase-page .showcase-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 4rem 15rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.showcase-page .grid-item h1 {
+    font-size: 2.3rem;
+    color: #ffffff;
+}
+
+.showcase-page .grid-item p,
+.showcase-page .grid-item a {
+    margin: 1.5rem 0;
+    color: #ffffff;
+}
+
+.showcase-page .grid-image img {
+    width: 100%;
+}
+
+/*---------------- Cart Page ----------------*/
+main.cart-page {
+    display: grid;
+    grid-template-columns: 0.9fr 400px;
+    grid-template-rows: auto auto;
+    gap: 4rem;
+    padding: 10rem;
+    margin: -4rem 0;
+}
+
+.Cart-page-hero {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    padding: 0;
+}
+
+.Cart-page-hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.Cart-page-hero .highlight {
+    color: #b602bd;
+}
+
+.Cart-page-hero p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #ffffff;
+}
+
+.customer-info, .payment-details {
+    grid-column: 1;
+    border: 2px solid #b602bd;
+    box-shadow: 0 0 50px rgba(182, 2, 189, 0.7);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.customer-info {
+    grid-row: 2;
+}
+
+.customer-info label {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.payment-details {
+    grid-row: 3;
+}
+
+.payment-details label {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.customer-info h2, .payment-details h2, .payment-details form {
+    color: #ffffff;
+}
+
+.order-summary {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    border: 2px solid #b602bd;
+    box-shadow: 0 0 50px rgba(182, 2, 189, 0.7);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.order-summary h2, .order-summary h3, .order-summary p {
+    color: #ffffff;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.product-image {
+    margin-right: 1rem;
+}
+
+.item-details {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    color: #ffffff;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+button.add-card, .continue-shopping, .pay-now {
+    background-color: #0400f8;
+    color: #ffffff;
+    border: 2px solid #b602bd;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P'
+}
+
+button.add-card:hover, .continue-shopping:hover, .pay-now:hover {
+    background-color: #b602bd;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(182, 2, 189, 0.8);
+}
+
+/* Specific Button Overrides */
+.continue-shopping {
+    background-color: #b602bd;
+}
+
+.pay-now {
+    background-color: #0400f8;
+}
+
+
+/*---------------- Footer ----------------*/
+footer {
+    padding: 4rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.footer-nav {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    justify-content: center;
+    margin: 0;
+}
+
+.footer-nav li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 2px solid #b602bd;
+    margin: 1rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 0rem 0;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+.footer-bottom nav a {
+    color: #ffffff;
+    border: none;
+}
+
+/*---------------- Media Queries ----------------*/
+@media (max-width: 768px) {
+
+    /*---------------- Header ----------------*/
+    header {
+        padding-left: 15px;
+    }
+
+    /*---------------- Nav ----------------*/
+    nav ul {
+        flex-direction: row;
+        gap: 0.4rem;
+        margin-right: 60px;
+        white-space: nowrap;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: 'Press Start 2P', sans-serif;
+        color: #b602bd;
+        font-size: 0.4em;
+    }
+
+    /*---------------- Index ----------------*/
+    .hero {
+        height: auto;
+        background-position: center top;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        justify-items: center;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    .testimonials {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .testimonials h1 {
+        font-size: 2rem;
+    }
+
+    .testimonial-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .newsletter button {
+        white-space: nowrap;
+    }
+
+    /*---------------- About Us ----------------*/
+    main.contact-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .contact-page-hero {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        padding: 0;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        border: 2px solid #b602bd;
+        box-shadow: 0 0 50px rgba(182, 2, 189, 0.7);
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #181818;
+        margin-top: 2rem;
+    }
+
+    .contact-info h2 {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info label {
+        display: block;
+        margin: 0.5rem 0 0.2rem;
+        color: #ffffff;
+        font-family: 'Press Start 2P', sans-serif;
+    }
+
+    .contact-info input[type="text"], .contact-info input[type="email"], .contact-info textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 2px solid #b602bd;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Press Start 2P', sans-serif;
+    }
+
+    button.send-message {
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        background-color: #0400f8;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P', sans-serif;
+        border: 2px solid #b602bd;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        width: 100%;
+    }
+
+    button.send-message:hover {
+        background-color: #b602bd;
+        box-shadow: 0 0 15px rgba(182, 2, 189, 0.8);
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    /*---------------- Games ----------------*/
+    .button-filled {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .games-page .hero-content {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .games-page .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .games-page .games-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .games-page .games-intro {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .games-page .games-grid .games h2, .games-page .games-grid .games p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .games-page .add-to-cart-button {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /*---------------- Showcase ----------------*/
+    .showcase-page .showcase-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .showcase-page .grid-item {
+        max-width: 100%;
+    }
+
+    .showcase-page .grid-item h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .showcase-page .grid-item p,
+    .showcase-page .grid-item a {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .showcase-page .grid-image img {
+        max-width: 100%;
+    }
+
+    .showcase-page .showcase-grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .showcase-page .showcase-grid-layout .grid-item:nth-child(1) {
+        grid-row: 2; /* Pokemon Blue Text moves to the second position */
+    }
+
+    .showcase-page .showcase-grid-layout .grid-image:nth-child(2) {
+        grid-row: 1; /* Pokemon Blue Image moves to the first position */
+    }
+
+    .showcase-page .showcase-grid-layout .grid-item:nth-child(3) {
+        grid-row: 4; /* Lufia Text moves to the fourth position */
+    }
+
+    .showcase-page .showcase-grid-layout .grid-image:nth-child(4) {
+        grid-row: 3; /* Lufia Image moves to the third position */
+    }
+
+    .showcase-page .showcase-grid-layout .grid-item:nth-child(5) {
+        grid-row: 6; /* Street Fighter 2 Text moves to the sixth position */
+    }
+
+    .showcase-page .showcase-grid-layout .grid-image:nth-child(6) {
+        grid-row: 5; /* Street Fighter 2 Image moves to the sixth position */
+    }
+
+    /*---------------- Cart Page ----------------*/
+    main.cart-page {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 3rem;
+    }
+
+    .Cart-page-hero {
+        grid-column: 1;
+        padding: 2rem;
+        text-align: center;
+        margin-bottom: -5rem;
+    }
+
+    .customer-info, .payment-details, .order-summary {
+        grid-column: 1;
+    }
+
+    .order-summary {
+        grid-row: auto;
+    }
+
+    .Cart-page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .Cart-page-hero p {
+        font-size: 0.9rem;
+    }
+
+    /*---------------- Footer ----------------*/
+    .footer-nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .footer-nav {
+        font-size: 25px;
+    }
+
+    .footer-content {
+        margin-top: 2rem;
+    }
+
+}

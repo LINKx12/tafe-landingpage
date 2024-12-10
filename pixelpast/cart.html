@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Past - Games</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <figure class="logo">
+            <img src="images/pixelpastlogo.png" alt="Pixel Past Logo"> <!-- © 2024 Jay Brown Graphics using Adobe Illustrator jay.brown@outlook.com.au -->
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <section class="Cart-page-hero">
+            <h1>Your <span class="highlight">Cart & Checkout</span></h1>
+            <p>Fill in your contact information below to place your order</p>
+        </section>
+
+        <section class="customer-info">
+            <h2>Customer Information</h2>
+            <form>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="City" required>
+
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" placeholder="Postal Code" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </form>
+        </section>
+
+        <section class="payment-details">
+            <h2>Payment Details</h2>
+            <form>
+                <label>
+                    <input type="radio" name="payment-method" value="net-banking" required>
+                    Net Banking
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="credit-debit-card">
+                    Credit/Debit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="cash-on-delivery">
+                    Cash on Delivery
+                </label>
+                <button type="button" class="add-card">Add New Card</button>
+            </form>
+        </section>
+
+        <aside class="order-summary">
+            <h2>Order Summary</h2>
+            <article class="order-item">
+                <img src="images/redcart.png" alt="Pokemon Red Game" class="product-image"> <!-- © 2024 Jay Brown Photography jay.brown@outlook.com.au -->
+                <section class="item-details">
+                    <p>Pokemon Red</p>
+                    <p>$295.00</p>
+                </section>
+            </article>
+            <article class="order-item">
+                <img src="images/cameracart.png" alt="Desk Lamp" class="product-image"> <!-- © 2024 Jay Brown Photography jay.brown@outlook.com.au -->
+                <section class="item-details">
+                    <p>Game Boy Camera</p>
+                    <p>$50.00</p>
+                </section>
+            </article>
+            <hr>
+            <p>Subtotal: $345.00</p>
+            <p>Tax: $34.50</p>
+            <h3>Grand Total: $379.50</h3>
+            <button class="continue-shopping">Continue Shopping</button>
+            <button class="pay-now">Pay Now</button>
+        </aside>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <img src="images/alien.gif" alt="Alien" class="footer-alien"> <!-- © 2024 Jay Brown Graphics using Adobe Photoshop jay.brown@outlook.com.au -->
+                    <a href="games.html">Games</a>
+                </li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li>
+                    <a href="cart.html">Cart</a>
+                    <img src="images/alien.gif" alt="Alien" class="footer-alien"> <!-- © 2024 Jay Brown Graphics using Adobe Photoshop jay.brown@outlook.com.au -->
+                </li>
+            </ul>
+        </nav>
+        <hr class="footer-divider">
+        <section class="footer-bottom">
+            <p>© 2024 The Marketplace. All rights reserved.</p>
+            <nav>
+                <a href="policies/privacy.pdf">Privacy Policy</a> |
+                <a href="policies/disclaimer.pdf">Disclaimer</a> |
+                <a href="policies/security.pdf">Security Policy</a>
+            </nav>
+        </section>
+        <section class="footer-content">
+            <figure class="footer-logo">
+                <img src="images/pixelpastlogo.png" alt="Pixel Past Logo"> <!-- © 2024 Jay Brown Graphics using Adobe Illustrator jay.brown@outlook.com.au -->
+            </figure>
+            <aside class="footer-socials">
+                <img src="images/socials.png" alt="Social Media Links">
+            </aside>
+        </section>
+    </footer>
+
+</body>
+</html>
